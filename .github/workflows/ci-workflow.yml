@@ -32,6 +32,9 @@ jobs:
           black --check .
           
     - name: Test with pytest
+      env:
+       MODEL_PATH: "model/model.pth"
+       LOG_PATH: "logs/"
       run: |
         pytest tests/
         
