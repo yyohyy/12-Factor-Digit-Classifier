@@ -49,10 +49,10 @@ The digit classifier model is trained on the MNIST dataset using techniques from
 
 .env.example  
 
-`
+```
    MODEL_PATH=path/to/your/model  
    LOG_PATH=logs/
-`
+```
 
 ### Testing
 Run tests locally with:
