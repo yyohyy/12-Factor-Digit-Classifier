@@ -11,8 +11,8 @@ The digit classifier model is trained on the MNIST dataset using techniques from
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yyohyy/your-repo.git
-   cd your-repo
+   git clone https://github.com/yyohyy/12-Factor-Digit-Classifier.git
+   cd 12-Factor-Digit-Classifier
    ```
 2. Create and activate a Python virtual environment[on Windows]:
     ```bash
@@ -37,20 +37,20 @@ The digit classifier model is trained on the MNIST dataset using techniques from
    ```bash
    docker build -t digit-classifier .
    ```
-2. Run the DDocker container:
+2. Run the Docker container:
     ```bash
     docker run -d -p 8000:8000 digit-classifier
     ```
 3. Install dependencies:
    
-   Open your browser at http://localhost:8000/doc to predict digit in an image.
+   Open your browser at http://localhost:8000/docs to predict digit in an image.
 
 ### Configuration
 
 .env.example  
 
 `
-   MODEL_PATH=path/to/your/model
+   MODEL_PATH=path/to/your/model  
    LOG_PATH=logs/
 `
 
