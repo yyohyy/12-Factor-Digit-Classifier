@@ -1,6 +1,6 @@
 # Digit Classification 
 
-A **digit classification microservice** built using **FastAPI** and trained on the **MNIST dataset**. The app follows the [12-Factor App](https://12factor.net/) methodology to ensure best practices in configuration and deployment.
+A FastAPI-based microservice for digit classification, designed following the [12-Factor App](https://12factor.net/) methodology to promote best practices in configuration, scalability, and deployment.
 
 The digit classifier model is trained on the MNIST dataset using techniques from [Machine Learning with PyTorch and Scikit-Learn](https://sebastianraschka.com/blog/2022/ml-pytorch-book.html) by Sebastian Raschka, Yuxi Liu, and Vahid Mirjalili. The classifier expects **grayscale images of handwritten digits, ideally 28x28 pixels in size**, similar to those in the MNIST dataset.
 
@@ -28,6 +28,7 @@ The digit classifier model is trained on the MNIST dataset using techniques from
     uvicorn app.main:app --reload
     ```
 5. Access the API docs:
+   
    Open your browser and go to http://localhost:8000/docs to predict digit in an image.
 
 ### Running with Docker
@@ -41,17 +42,19 @@ The digit classifier model is trained on the MNIST dataset using techniques from
     docker run -d -p 8000:8000 digit-classifier
     ```
 3. Install dependencies:
+   
    Open your browser at http://localhost:8000/doc to predict digit in an image.
 
-###Configuration
+### Configuration
 
-.env.example 
+.env.example  
+
 `
    MODEL_PATH=path/to/your/model
    LOG_PATH=logs/
 `
 
-###Testing
+### Testing
 Run tests locally with:
 ```
 pytest tests/
