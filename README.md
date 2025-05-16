@@ -4,17 +4,37 @@ A FastAPI-based microservice for digit classification, designed following the [1
 
 The digit classifier model is trained on the MNIST dataset using techniques from [Machine Learning with PyTorch and Scikit-Learn](https://sebastianraschka.com/blog/2022/ml-pytorch-book.html) by Sebastian Raschka, Yuxi Liu, and Vahid Mirjalili. The classifier expects **grayscale images of handwritten digits, ideally 28x28 pixels in size**, similar to those in the MNIST dataset.
 
+## Features
+
+- Classifies hand-written digits (0–9) using a trained PyTorch model
+- Digit Classification API built with FastAPI, supporting automatic docs 
+- Containerized using Docker and orchestrated with Docker Compose
+- Automated testing and linting pipeline for continuous integration
+- Includes test cases for utility functions and API endpoints
+
+## Tools Used
+
+- Python 3.12
+- FastAPI
+- PyTorch
+- Pydantic / Pydantic Settings
+- Docker & Docker Compose
+- GitHub Actions
+- Pytest
+- Uvicorn
+- Pre-commit 
+
 ## How to Run the Application
 
 ### Running Locally
 
-1. Clone the repository:
+1. Clone the repository[on Windows]:
 
    ```bash
    git clone https://github.com/yyohyy/12-Factor-Digit-Classifier.git
    cd 12-Factor-Digit-Classifier
    ```
-2. Create and activate a Python virtual environment[on Windows]:
+2. Create and activate a Python virtual environment:
     ```bash
     python -m venv venv
     venv\Scripts\activate
@@ -47,7 +67,7 @@ The digit classifier model is trained on the MNIST dataset using techniques from
 
 ### Configuration
 
-.env.example  
+Set .env file 
 
 ```
    MODEL_PATH=path/to/your/model  
