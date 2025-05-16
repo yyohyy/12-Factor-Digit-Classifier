@@ -11,6 +11,7 @@ The digit classifier model is trained on the MNIST dataset using techniques from
 - Containerized using Docker and orchestrated with Docker Compose
 - Automated testing and linting pipeline for continuous integration
 - Includes test cases for utility functions and API endpoints
+- Follows the 12-Factor App principles 
 
 ## Tools Used
 
